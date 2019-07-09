@@ -11,7 +11,7 @@ public class Clazz {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public char getName() {
+	public char getName() { 
 		return name;
 	}
 	public void setName(char name) {
