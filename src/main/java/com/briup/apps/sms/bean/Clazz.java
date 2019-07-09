@@ -29,6 +29,6 @@ public class Clazz {
 	public void setCollege_id(int college_id) {
 		this.college_id = college_id;
 	}
-	  
+	   
 
 }
