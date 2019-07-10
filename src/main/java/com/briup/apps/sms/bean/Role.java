@@ -1,11 +1,4 @@
 package com.briup.apps.sms.bean;
-<<<<<<< HEAD
-/**
- **身份信息
- **/
-=======
-
->>>>>>> branch 'master' of https://github.com/matongtong98/sms.git
 public class Role {
 private Long id;
 private String name;

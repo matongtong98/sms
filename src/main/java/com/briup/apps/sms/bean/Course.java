@@ -1,19 +1,11 @@
 package com.briup.apps.sms.bean;
 
-
-
 public class Course {
-<<<<<<< HEAD
-	  private Long id;
-	  private String name;
-	  private String credit;
-	  private Long user_id;
-=======
+
 	private Long id;
 	private String name;
 	private double credit;
 	private Long user_id;
->>>>>>> branch 'master' of https://github.com/matongtong98/sms.git
 	public Long getId() {
 		return id;
 	}
