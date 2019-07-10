@@ -1,5 +1,5 @@
 package com.briup.apps.sms.dao;
 
-public class College {
+public class Collegedao {
 
 }
