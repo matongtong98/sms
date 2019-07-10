@@ -1,7 +1,7 @@
 package com.briup.apps.sms.bean;
 /*
  * user_role表*/
-public class user_role {
+public class User_role {
 	private long id;
 	private long user_id;
 	private long role_id;

@@ -2,7 +2,7 @@ package com.briup.apps.sms.bean;
 /**
  *身份信息
  **/
-public class role {
+public class Role {
 	  private Long id;
 	  private String name;
 public Long getId() {
