@@ -7,20 +7,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.briup.apps.sms.bean.School;
-import com.briup.apps.sms.service.SchoolService;
+import com.briup.apps.sms.bean.College;
+import com.briup.apps.sms.service.Collegeservice;
 
 @RestController
-@RequestMapping("/school")
-public class SchoolController {
+@RequestMapping("/college")
+public class CollegeController {
 
 	@Autowired
-	private SchoolService schoolService;
+	private Collegeservice collegeService;
 
 	// http://localhost:8080/school/selectAll
 	@GetMapping("selectAll")
-	public List<School> selectAll(){
-		return schoolService.selectAll();
+	public List<College> selectAll(){
+		return collegeService.selectAll();
 	}
 }
- 
