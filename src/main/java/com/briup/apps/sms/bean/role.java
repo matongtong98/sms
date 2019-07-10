@@ -1,6 +1,6 @@
 package com.briup.apps.sms.bean;
 /**
- *身份选择
+ *身份信息
  **/
 public class role {
 	  private Long id;
