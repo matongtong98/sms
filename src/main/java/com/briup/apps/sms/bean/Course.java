@@ -1,10 +1,19 @@
 package com.briup.apps.sms.bean;
-/*course表*/
+
+
+
 public class Course {
+<<<<<<< HEAD
 	  private Long id;
 	  private String name;
 	  private String credit;
 	  private Long user_id;
+=======
+	private Long id;
+	private String name;
+	private double credit;
+	private Long user_id;
+>>>>>>> branch 'master' of https://github.com/matongtong98/sms.git
 	public Long getId() {
 		return id;
 	}
@@ -17,10 +26,10 @@ public class Course {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCredit() {
+	public double getCredit() {
 		return credit;
 	}
-	public void setCredit(String credit) {
+	public void setCredit(double credit) {
 		this.credit = credit;
 	}
 	public Long getUser_id() {
@@ -29,5 +38,5 @@ public class Course {
 	public void setUser_id(Long user_id) {
 		this.user_id = user_id;
 	}
-	  
 }
+
