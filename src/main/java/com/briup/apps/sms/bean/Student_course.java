@@ -1,6 +1,6 @@
 package com.briup.apps.sms.bean;
 /*student_course表*/
-public class student_course {
+public class Student_course {
 	private long id;
 	private long user_id;
 	private long course_id;

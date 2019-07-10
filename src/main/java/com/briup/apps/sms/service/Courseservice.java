@@ -1,5 +1,5 @@
 package com.briup.apps.sms.service;
 
-public interface courseservice {
+public interface Courseservice {
 
 }
