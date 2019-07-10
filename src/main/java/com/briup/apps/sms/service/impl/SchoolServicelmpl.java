@@ -23,7 +23,7 @@ public class SchoolServicelmpl implements SchoolService {
 	@Override
 	public List<School> selectAll() {
 		// TODO Auto-generated method stub
-		return Schooldao.selectAll();
+		return schooldao.selectAll();
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class SchoolServicelmpl implements SchoolService {
 		if(school.getId()==null) {
 			schooldao.insert(school);
 		}else {
-			Schooldao.update(school);
+			schooldao.update(school);
 		}
 	}
 }
