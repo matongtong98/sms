@@ -30,6 +30,7 @@ public class SchoolController {
 			return e.getMessage();
 		}
 	}
+	
 	// http://localhost:8080/school/selectAll
 	@GetMapping("selectAll")
 	public List<School> selectAll(){
