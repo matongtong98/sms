@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.briup.apps.sms.bean.Role;
 
-public class Roledao {
+public interface Roledao {
 	        //查询所有
 			List<Role> selectAll();
 			
