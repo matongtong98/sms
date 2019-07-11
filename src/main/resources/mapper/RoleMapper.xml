@@ -6,5 +6,22 @@
   <select id="selectAll" resultType="com.briup.apps.sms.bean.Role">
     select * from sms_role
   </select>
+   <insert id="insert">
+  insert into sms_course values(null,#{name})
+  
+  </insert>
+  <update id="update">
+  update sms_course
+  set name=#{name},
+	where id = #{id}
+  
+  </update>
+  
+  <delete id="deleteById">
+  
+  delete from sms_course where id = #{id}
+  
+  </delete>
+  
 </mapper>
   

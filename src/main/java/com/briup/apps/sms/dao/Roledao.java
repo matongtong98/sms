@@ -13,5 +13,8 @@ public interface Roledao {
 			
 			//修改
 			void update(Role role);
+		    
+			//删除
+			void deleteById(long id);
 
 }
