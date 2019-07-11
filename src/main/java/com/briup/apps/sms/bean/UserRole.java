@@ -1,28 +1,27 @@
 package com.briup.apps.sms.bean;
-
+/*
+ * user_role表*/
 public class UserRole {
 	private Long id;
-	private Long UserId;
-	private Long RoleId;
+	private Long user_id;
+	private Long role_id;
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
-	} 
-	public Long getUserId() {
-		return UserId;
 	}
-	public void setUserId(Long userId) {
-		UserId = userId;
+	public Long getUser_id() {
+		return user_id;
 	}
-	public Long getRoleId() {
-		return RoleId;
+	public void setUser_id(Long user_id) {
+		this.user_id = user_id;
 	}
-	public void setRoleId(Long roleId) {
-		RoleId = roleId;
+	public Long getRole_id() {
+		return role_id;
 	}
-	
+	public void setRole_id(Long role_id) {
+		this.role_id = role_id;
+	}
 
 }
-
