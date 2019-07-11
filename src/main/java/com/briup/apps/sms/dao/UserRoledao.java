@@ -10,5 +10,5 @@ public interface UserRoledao {
   
   void update (UserRole userRole);
 
- // void deleteById(long Id);
+  void deleteById(long Id);
 }
