@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.briup.apps.sms.bean.School;
+
 import com.briup.apps.sms.bean.Student_course;
-import com.briup.apps.sms.service.SchoolService;
+
 import com.briup.apps.sms.service.Student_courseservice;
 
 @RestController
