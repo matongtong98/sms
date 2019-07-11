@@ -14,7 +14,7 @@ import com.briup.apps.sms.service.Roleservice;
  * 校园逻辑逻辑处理的实现类
  * */  
 @Service
-public class RoleserviceImpl implements Roleservice {
+public class RoleServicelmpl implements Roleservice {
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 	@Resource
 	private Roledao roledao;
