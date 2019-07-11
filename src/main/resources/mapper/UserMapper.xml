@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.apps.sms.dao.UserDao">
+  <select id="selectAll" 
+  resultType="com.briup.apps.sms.bean.User">
+    select * from sms_user
+  </select>
+    <insert id="insert">
+  		insert into sms_user values(null,#{realname},#{telephone},#{password},#{student_no},#{gender},#{clazz_id})
+  </insert>
+  
+  
+  <update id="update">
+		update sms_user
+		set realname = #{realname},
+		telephone = #{telephone},
+		password = #{password},
+		student_no = #{student_no},
+		gender = #{gender},
+		clazz_id = #{clazz_id},
+  </update>
+  
+  <delete id="deleteById">
+		delete from sms_user 
+		where id = #{id}
+  </delete>
+  
+</mapper>
+
+  
