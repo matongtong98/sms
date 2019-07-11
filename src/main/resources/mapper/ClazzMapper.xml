@@ -2,9 +2,24 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.briup.apps.sms.dao.Clazzdao">
+<mapper namespace="com.briup.apps.sms.dao.ClazzDao">
   <select id="selectAll" resultType="com.briup.apps.sms.bean.Clazz">
     select * from sms_clazz
   </select>
+  <insert id="insert">
+ 	 insert into sms_clazz values(null,#{name},#{begin_time},#{college_id});
+  </insert>
+  <update id="update">
+ 	 update sms_course
+ 	 set name=#{name},
+ 	 begin_time=#{begin_time},
+ 	 college_id=#{college_id},
+ 	 where id=#{id};
+//查询所有	 
+  </update>
+  <delete id="deleteById">
+  	delete from sms_clazz where id=#{id};
+  </delete>
+  
 </mapper>
   
