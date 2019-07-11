@@ -10,4 +10,5 @@ public interface SchoolDao {
   void update (School school);
 
 
+void deleteById(long id);
 }

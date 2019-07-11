@@ -32,6 +32,13 @@ public class SchoolServiceImpl implements SchoolService {
 			schoolDao.insert(school);
 		}else {
 			schoolDao.update(school);
-		}
+			}
 	}
-}
+
+	@Override
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	}	
