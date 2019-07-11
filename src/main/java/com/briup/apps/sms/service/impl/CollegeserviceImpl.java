@@ -16,16 +16,16 @@ import com.briup.apps.sms.service.Collegeservice;
 @Service
 public class CollegeserviceImpl implements Collegeservice {
 	// 依赖注入，实例化CollegeDao并且赋值给CollegeDao这个变量
-	@Resource
+@Resource
 	private Collegedao collegedao;
 
-	@Override
-	public List<College> selectAll() {
+@Override
+public List<College> selectAll() {
 		// TODO Auto-generated method stub
 		return collegedao.selectAll();
 	}
 
-	@Override
+@Override
 	public void saveOrUpdate(College college) throws Exception {
 		// TODO Auto-generated method stub
 		if(college.getId()==null) {
@@ -34,4 +34,12 @@ public class CollegeserviceImpl implements Collegeservice {
 			collegedao.update(college);
 		}
 	}
+
+@Override
+public void deleteById(long id) throws Exception {
+	// TODO Auto-generated method stub
+	
+}
+
+
 }

@@ -11,4 +11,5 @@ List<College> selectAll();
 void insert(College college);
 
 void update (College college);
+void deleteById(long id);
 }
