@@ -13,9 +13,8 @@
  	 update sms_course
  	 set name=#{name},
  	 begin_time=#{begin_time},
- 	 college_id=#{college_id},
- 	 where id=#{id};
-//查询所有	 
+ 	 college_id=#{college_id}
+ 	 where id=#{id}; 
   </update>
   <delete id="deleteById">
   	delete from sms_clazz where id=#{id};
