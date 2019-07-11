@@ -35,7 +35,7 @@ public class ClazzController {
 	public List<Clazz> selectAll(){
 		return clazzService.selectAll();
    }
-	//123323
+	//删除模块
 	@GetMapping("deleteById")
 	public String deleteById(long id) {
 		try {

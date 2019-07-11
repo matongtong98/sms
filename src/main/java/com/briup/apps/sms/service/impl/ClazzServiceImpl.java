@@ -37,5 +37,6 @@ public class ClazzServiceImpl implements ClazzService {
 	@Override
 	public void deleteById(long id) throws Exception {
 		// TODO Auto-generated method stub
+		clazzDao.deleteById(id);
 }
 }

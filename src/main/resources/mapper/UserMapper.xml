@@ -8,7 +8,7 @@
     select * from sms_user
   </select>
     <insert id="insert">
-  		insert into sms_user values(null,#{realname},#{telephone},#{password},#{student_no},#{gender},#{clazz_id})
+  		insert into sms_user values(null,#{realname},#{telephone},#{password},#{student_no},#{gender},#{clazz_id});
   </insert>
   
   
@@ -19,7 +19,8 @@
 		password = #{password},
 		student_no = #{student_no},
 		gender = #{gender},
-		clazz_id = #{clazz_id},
+		clazz_id = #{clazz_id}
+		where  id = #{id}
   </update>
   
   <delete id="deleteById">
