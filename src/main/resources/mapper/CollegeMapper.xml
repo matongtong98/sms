@@ -13,7 +13,7 @@
   update sms_college
   set name=#{name},
 	description=#{description},
-	school_id=#{school_id}
+	
 	where id = #{id}  
   </update> 
   <delete id="deleteById"> 
