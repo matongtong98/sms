@@ -8,13 +8,13 @@ import org.springframework.stereotype.Service;
 
 import com.briup.apps.sms.bean.User;
 import com.briup.apps.sms.dao.UserDao;
-import com.briup.apps.sms.service.Userservice;
+import com.briup.apps.sms.service.UserService;
 
 /**
  * 用户逻辑逻辑处理的实现类
  * */  
 @Service
-public class UserServicelmpl implements Userservice {
+public class UserServicelmpl implements UserService {
 	// 依赖注入，实例化UserDao并且赋值给userDao这个变量
 	@Resource
 	private UserDao userDao;
@@ -33,7 +33,6 @@ public class UserServicelmpl implements Userservice {
 			}
 	}
 
-	@Override
 	public void deleteById(long id) throws Exception {
 		// TODO Auto-generated method stub
 		userDao.deleteById(id);

@@ -44,7 +44,6 @@ public class Student_courseserviceImpl implements Student_courseservice {
 	@Override
 	public void saveOrUpdate(Student_course student_course) throws Exception {
 		// TODO Auto-generated method stub
-		
 	}
 
 	}

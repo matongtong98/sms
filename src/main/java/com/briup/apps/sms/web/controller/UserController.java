@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.briup.apps.sms.bean.User;
-import com.briup.apps.sms.service.Userservice;
+import com.briup.apps.sms.service.UserService;
 
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
 	@Autowired
-	private Userservice userservice;
+	private UserService userservice;
 
 	
 	@PostMapping("saveOrUpdate")
