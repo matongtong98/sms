@@ -16,7 +16,6 @@ import com.briup.apps.sms.service.Collegeservice;
 @RestController
 @RequestMapping("/college")
 public class CollegeController {
-
 	@Autowired
 	private Collegeservice collegeService;
 	@PostMapping("saveOrUpdate")
@@ -26,12 +25,9 @@ public class CollegeController {
 			return "保存或更新成功";
 		} catch (Exception e) {
 		return e.getMessage();
+		}	
 		}
-		
-		}
-			
-	
-	// http://localhost:8080/school/selectAll
+	// http://localhost:8080/college/selectAll
 	@GetMapping("selectAll")
 	public List<College> selectAll(){
 		return collegeService.selectAll();

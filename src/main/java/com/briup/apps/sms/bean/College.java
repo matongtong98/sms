@@ -7,8 +7,11 @@ private Long id;
 private String name;
 private String description;	
 private Long school_id;
-public Long  getId() {
+public Long getId() {
 	return id;
+}
+public void setId(Long id) {
+	this.id = id;
 }
 public String getName() {
 	return name;
@@ -28,7 +31,5 @@ public Long getSchool_id() {
 public void setSchool_id(Long school_id) {
 	this.school_id = school_id;
 }
-public void setId(Long id) {
-	this.id = id;
-}
+
 }
